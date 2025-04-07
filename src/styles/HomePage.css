@@ -1,0 +1,131 @@
+/* =======================
+   Home Page - Main Layout
+========================== */
+
+.home-container {
+  padding: 60px 20px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+/* =======================
+   Hero Section
+========================== */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  text-align: left;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+.home-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #1e40af;
+}
+
+/* =======================
+   Highlight Section
+========================== */
+
+.highlight-section {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.highlight-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.highlight-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.highlight-card {
+  width: 180px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+/* =======================
+   Responsive - Optional
+========================== */
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text, .hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,116 @@
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Tambahan untuk halaman keranjang */
+.cart-page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+  color: #1e90ff;
+}
+
+/* Kartu produk dalam keranjang */
+.cart-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.cart-card:hover {
+  transform: scale(1.03);
+}
+
+.cart-image {
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.cart-info {
+  text-align: center;
+}
+
+.cart-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cart-price {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Tombol hapus dan link detail */
+.remove-button, .detail-link {
+  background-color: #646cff;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.remove-button:hover, .detail-link:hover {
+  background-color: #535bf2;
+}
+
+/* =============================== */
+/* Bagian Total dan Checkout Button */
+/* =============================== */
+
+.cart-summary {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+.cart-total {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.checkout-button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.checkout-button:hover {
+  background-color: #1565c0;
+}
+
+.checkout-card {
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  max-width: 300px;
+  width: 100%;
+}

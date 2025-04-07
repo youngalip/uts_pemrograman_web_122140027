@@ -1,0 +1,50 @@
+.product-page-wrapper {
+    padding: 20px;
+    margin-top: 80px; /* untuk navbar fixed */
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: flex-start; /* ubah dari flex-end */
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    padding: 0 10px; /* biar gak mentok ke kiri */
+  }
+  
+  
+  .filter-container select {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .product-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .product-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .search-bar-container {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .search-input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+  }
